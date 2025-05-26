@@ -1,5 +1,3 @@
-Harry Meyer // 1611341
-
 When 'Get Projects' is clicked with suitable data added, click the column headings to sort by asc or dcs (it can be hidden)
 
 Side note: I am completely aware of the ethical implications of using images that are not cleared for public use (i.e every image in this folder)
