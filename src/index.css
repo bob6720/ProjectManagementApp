@@ -1,0 +1,84 @@
+:root {
+  font-family: 'Orbitron', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1B7F78; /* Dark teal text */
+  background-color: #E1F7F6; /* Light Miku blue background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hyperlink Styling */
+a {
+  font-weight: 600;
+  color: #39C5BB; /* Miku aqua */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #1B7F78; /* Darker teal */
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block;
+  background-color: #E1F7F6;
+  color: #1B7F78;
+}
+
+/* Headline Styling */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #39C5BB;
+  text-shadow: 1px 1px 6px rgba(27, 127, 120, 0.3);
+}
+
+/* Miku-Themed Buttons */
+button {
+  border-radius: 30px;
+  border: 2px solid #39C5BB;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #C6F0EF;
+  color: #1B7F78;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(57, 197, 187, 0.3);
+}
+button:hover {
+  background-color: #39C5BB;
+  color: #ffffff;
+  border-color: #1B7F78;
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid #1B7F78;
+}
+
+/* Light Mode Overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1B7F78;
+    background-color: #F0FAFB;
+  }
+
+  a:hover {
+    color: #39C5BB;
+  }
+
+  button {
+    background-color: #E1F7F6;
+    color: #1B7F78;
+  }
+}

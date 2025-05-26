@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="/src/assets/hatsune_miku.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Management API</title>
+  <link href="/src/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div class="header">
+	<div class="banner-container">
+      <img src="/src/assets/welcome.gif" alt="Hello Kitty Logo" class="logo-img" />
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <h1 class="miku-title">Project Management API</h1>
+
+
+
+
+	<section class="miku-section">
+	  <h2>Welcome to Miku's Project Manager ♪</h2>
+	  <img
+		src="/src/assets/logo.png"
+		alt="Hatsune Miku"
+		id="mikuImage"
+		onmouseover="this.src='/src/assets/banner.gif'"
+		onmouseout="this.src='/src/assets/logo.png'"
+	  />
+	  <p>Manage your projects with style and rhythm! ✨</p>
+	</section>
+
+	
+    <!-- React App -->
+    <div id="root"></div>
+
+	
+
+  </div>
+
+  <div class="banner-container">
+    <img src="/src/assets/banner.jpg" alt="Miku Banner" class="banner-img" />
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

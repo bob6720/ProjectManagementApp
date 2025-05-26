@@ -1,0 +1,132 @@
+:root {
+  font-family: 'Orbitron', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1B7F78; /* Dark teal */
+  background-color: #E1F7F6; /* Light Miku blue */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Link styling */
+a {
+  font-weight: 600;
+  color: #39C5BB; /* Miku aqua */
+  text-decoration: none;
+}
+a:hover {
+  color: #1B7F78; /* Darker teal */
+}
+
+/* Body layout */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #E1F7F6;
+}
+
+/* Headers */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #39C5BB;
+  text-shadow: 0 0 10px rgba(57, 197, 187, 0.3);
+}
+
+/* General Button Styling */
+button {
+  border-radius: 30px;
+  border: 2px solid #39C5BB;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #C6F0EF;
+  color: #1B7F78;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 8px;
+  box-shadow: 0 4px 10px rgba(57, 197, 187, 0.3);
+}
+
+button:hover {
+  background-color: #39C5BB;
+  color: #ffffff;
+  border-color: #1B7F78;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #1B7F78;
+}
+
+/* Form Container */
+.create-project-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Orbitron', Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Form Styling */
+.project-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  background-color: #C6F0EF;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(57, 197, 187, 0.2);
+}
+
+/* Labels */
+.project-form label {
+  margin-bottom: 10px;
+  color: #1B7F78;
+  font-weight: 600;
+}
+
+/* Inputs/Textareas */
+.project-form input,
+.project-form textarea {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #39C5BB;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1C1C1C;
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.project-form button {
+  margin-top: 20px;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

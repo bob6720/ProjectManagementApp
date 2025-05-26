@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #E1F7F6; /* Soft Miku blue */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(57, 197, 187, 0.3);
+}
+
+/* Miku-themed Search Bar */
+input[type="text"] {
+  padding: 12px 16px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid #39C5BB;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #1B7F78;
+  box-shadow: 0 4px 10px rgba(57, 197, 187, 0.2);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  text-align: center;
+}
+
+input[type="text"]::placeholder {
+  color: #A0DAD9;
+  font-style: italic;
+}
+
+input[type="text"]:focus {
+  border-color: #1B7F78;
+  box-shadow: 0 0 12px rgba(27, 127, 120, 0.4);
+}
